@@ -84,4 +84,29 @@ git log
 
 PARALLEL DEVELOPMENT
 
-1 hr 9 min
+parallel development/ branching
+Branches are pointers to a specific commit
+Branches are of two types
+Local branches
+Remote tracking branches
+git branch {branchName} to create a branch, contains all the files from master branch
+git checkout branchName: to switch to branchName
+git merge branchName (you should be in master branch, as branch is going to merge in master)
+git pull= git fetch+ git merge
+Rebasing
+---------
+git rebase master
+git rebase branchName
+
+git push to commit your work on master repository
+must have some security, so that everyone cant commit their code
+so for pushing the changes we need to connect with ssh
+connect to ssh
+ssh-keygen on your git bash
+go to setting>SSH and GPG key
+copy the key and create a new ssh key
+ssh -T git@github.com : for newly created key authentication
+git push origin branchName: to commit whole branch to central repository
+git push origin master
+to revert back
+git checkout <firstEightDigitFromLogHash> fileName
