@@ -64,7 +64,7 @@ create a directory, go inside and right click and click on (get bash here)
 git bash emulator
 git init (will initialise empty repository)
 link local and remote repo
-git remote add origin <link>
+git remote add origin {gitLink}
 git pull origin master
 git push
 
@@ -109,4 +109,4 @@ ssh -T git@github.com : for newly created key authentication
 git push origin branchName: to commit whole branch to central repository
 git push origin master
 to revert back
-git checkout <firstEightDigitFromLogHash> fileName
+git checkout {firstEightDigitFromLogHash} fileName
